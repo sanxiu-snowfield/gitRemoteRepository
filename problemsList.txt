@@ -1,0 +1,12 @@
+
+1：想着让音频生成完成后，异步保存，后面弄个循环一直在轮询等待
+结果发现这个异步只有，在出了循环并且整个方法（constructor或者lick事件）结束后
+才会回到异步调用处执行后续
+
+C:\Users\Administrator\Desktop\temp\WpfApp4\WpfApp4
+
+ans: 和线程context有关，.net core和framework等实现并不同
+
+
+
+gitChange!
